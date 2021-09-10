@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+
+    &__titles {
+        margin: 0;
+    }
+
+    &__title a {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,38 @@
+.main {
+    width: 70%;
+    height: 100vh;
+
+    &__noteEdit, &__notePreview {
+        height: 500vh;
+    }
+
+    &__noteEdit {
+        padding: 25px;
+
+        &__input, &__textarea {
+            display: block;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            width: 100%;
+            height: calc(50vh - 130px);
+            padding: 10px;
+            resize: none;
+            font-size: inherit;
+            font-family: inherit;
+        }
+
+        &__input {
+            height: 50px;
+            font-size: 2rem;
+        }
+    }
+}
+
+// .no-active-note {
+//     width: 70%;
+//     height: 100vh;
+//     line-height: 100vh;
+//     text-align: center;
+//     font-size: 2rem;
+//     color: #999;
+// }

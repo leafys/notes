@@ -1,0 +1,32 @@
+.notePreview {
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.02);
+    height: 100vh;
+
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 20px 10px 0;
+
+        &__btnFirst {
+            font-size: 25px;
+        }
+
+        &__btnTwo {
+            margin-left: 20px;
+            font-size: 25px;
+        }
+    }
+
+    &__title {
+        padding: 25px 25px 0 25px;
+        margin: 0;
+    }
+
+    &__markdown {
+        padding: 0 25px 25px 25px;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
