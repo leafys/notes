@@ -1,17 +1,15 @@
-export const ADD_TITLE = "ADD_TITLE";
-
 export const REMOVE_NOTES = "REMOVE_NOTES";
-
-export const addTitle = (payload) => {
+export const removeNotes = (id) => {
   return {
-    type: ADD_TITLE,
-    payload,
+    type: REMOVE_NOTES,
+    id,
   };
 };
 
-export const removeNotes = (payload) => {
+export const CHANGE_INPUT = "CHANGE_INPUT";
+export const changeInput = (payload) => {
   return {
-    type: REMOVE_NOTES,
+    type: CHANGE_INPUT,
     payload,
   };
 };

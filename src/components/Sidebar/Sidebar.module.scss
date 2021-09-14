@@ -1,15 +1,42 @@
 .sidebar {
     width: 30%;
-    height: 100vh;
     border-right: 1px solid #ddd;
 
     &__header {
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding: 25px;
 
-        &__titles {
-            margin: 0;
+        &__search {
+            height: 30px;
+            max-width: 170px;
+            width: 100%;
         }
+    }
+
+    &__notes {
+        padding: 25px;
+        cursor: pointer;
+
+        &__text {
+            display: block;
+            color: #999;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__notes:hover {
+        background: #ddd;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 40%;
     }
 }

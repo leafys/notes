@@ -1,12 +1,14 @@
-import Main from "./components/Main/Main";
-import Sidebar from "./components/Sidebar/Sidebar";
+import { Route, Switch } from "react-router-dom";
 import "./scss/app.scss";
+import Notes from "./pages/Notes";
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <Main />
+      <Switch>
+        <Route exact path="/" component={Notes} />
+        <Route path="/note/:id" component={Notes} />
+      </Switch>
     </div>
   );
 }
