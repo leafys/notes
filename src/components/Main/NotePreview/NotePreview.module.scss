@@ -2,6 +2,7 @@
     border-top: 1px solid #ddd;
     overflow-y: scroll;
     background: rgba(0, 0, 0, 0.02);
+    height: 100%;
 
     &__header {
         display: flex;
@@ -15,6 +16,36 @@
         &__btnTwo {
             margin-left: 20px;
             font-size: 25px;
+        }
+    }
+
+    &__modalText {
+        &__title {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        &__desc {
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+
+    &__modalWindow {
+        &__btnDelete {
+            margin-left: 20px;
+            font-size: 25px;
+            position: absolute;
+            right: 40px;
+            bottom: 20px;
+        }
+
+        &__btnClose {
+            margin-left: 20px;
+            font-size: 25px;
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
         }
     }
 

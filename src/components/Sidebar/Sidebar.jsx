@@ -12,7 +12,11 @@ const Sidebar = () => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.sidebar__header}>
-        <h1 className={styles.sidebar__header__title}>Notes</h1>
+        <h1 className={styles.sidebar__header__title}>
+          <Link className={styles.sidebar__header__link} to="/">
+            Notes
+          </Link>
+        </h1>
         <input
           className={styles.sidebar__header__search}
           type="text"

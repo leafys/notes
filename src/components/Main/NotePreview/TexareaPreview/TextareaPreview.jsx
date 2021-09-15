@@ -21,7 +21,7 @@ const TexareaPreview = ({ title, desc, id }) => {
           <h4 className={styles.texareaPreview__blockTitle__title}>{title}</h4>
         </div>
         <textarea
-          maxlength="60"
+          maxLength="60"
           value={title}
           className={styles.texareaPreview__blockTitle__area}
           onChange={(e) => updateTitle(e.target.value)}
@@ -35,7 +35,7 @@ const TexareaPreview = ({ title, desc, id }) => {
           <h4 className={styles.texareaPreview__blockDesc__desc}>{desc}</h4>
         </div>
         <textarea
-          maxlength="225"
+          maxLength="225"
           value={desc}
           className={styles.texareaPreview__blockDesc__area}
           onChange={(e) => updateDesc(e.target.value)}
