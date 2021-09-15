@@ -1,6 +1,8 @@
 .sidebar {
     width: 30%;
     border-right: 1px solid #ddd;
+    overflow: scroll;
+    height: 950px;
 
     &__header {
         display: flex;

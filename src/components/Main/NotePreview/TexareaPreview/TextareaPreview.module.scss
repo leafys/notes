@@ -1,20 +1,49 @@
 .texareaPreview {
     padding: 25px;
+    display: flex;
+    
+    &__blockTitle {
+        margin-right: 30px;
 
-    &__area {
-        max-width: 600px;
-        width: 100%;
-        resize: none;
-        padding: 10px;
-        font-size: 15px;
+        &__title {
+            max-width: 600px;
+            height: 70px
+        }
+    }
+
+    &__blockTitle, &__blockDesc {
+        &__area {
+            max-width: 600px;
+            width: 100%;
+            resize: none;
+            padding: 10px;
+            font-size: 15px;
+            border: 2px solid #a9c358;
+        }
+    }
+
+    &__blockDesc {
+        &__desc {
+            height: 70px;
+            max-width: 600px;
+            word-wrap: break-word;
+        }
     }
 }
 
 @media only screen and (max-width: 768px) {
     .texareaPreview {
-        &__area {
-            max-width: 400px;
-            height: 100px;
+        flex-wrap: wrap;
+
+        &__blockTitle {
+            margin-right: 0;
+        }
+        
+        &__blockTitle, &__blockDesc {
+            &__area {
+                max-width: 350px;
+                height: 100px;
+            }
         }
     }
 }

@@ -6,10 +6,18 @@ export const removeNotes = (id) => {
   };
 };
 
-export const CHANGE_INPUT = "CHANGE_INPUT";
-export const changeInput = (payload) => {
+export const CHANGE_DESC = "CHANGE_DESC";
+export const changeDesc = (payload) => {
   return {
-    type: CHANGE_INPUT,
+    type: CHANGE_DESC,
+    payload,
+  };
+};
+
+export const CHANGE_TITLE = "CHANGE_TITLE";
+export const changeTitle = (payload) => {
+  return {
+    type: CHANGE_TITLE,
     payload,
   };
 };

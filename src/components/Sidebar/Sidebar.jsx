@@ -6,7 +6,6 @@ import moment from "moment";
 
 const Sidebar = () => {
   const noteElements = useSelector((state) => state.note.noteData);
-  const plug = "";
   let date = moment().format("YYYY-MM-DD");
   const [searchNote, setSearchNote] = useState("");
 
@@ -30,7 +29,7 @@ const Sidebar = () => {
           } else if (e.title.toLowerCase().includes(searchNote.toLowerCase())) {
             return e;
           } else {
-            return plug;
+            return "";
           }
         })
         .map((note) => (
